@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #container{
+            width: 980px;
+           border: 1px solid #cccccc ;
+            margin: 50px auto ;
+            /*使其居中（只限于块元素 是浏览器的默认行为）*/
+
+        }
+        #header,#footer  {
+            height: 50px;
+            background: #cccccc ;
+            font-size: 25px;
+            color:#ffffff;
+            line-height: 50px;
+        }
+        /*sidebar 开始*/
+        #sidebar {
+            width:30%;
+            height: 400px;
+            float:left;
+            border-right: 1px solid #cccccc;
+
+            /*box-sizing: border-box;*/
+        }
+        #sidebar .content {
+            margin: 40px 20px;
+        }
+        /*sidebar 结束*/
+        /*content 开始*/
+        #content {
+            width: 69%;
+            height: 400px;
+            float:left;
+        }
+        #content .details {
+            margin: 40px 20px;
+        }
+        /*content 结束*/
+        #footer {
+            clear: both;
+            /*禁止浮动*/
+        }
+
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <p>W3School.com.cn</p>
+    </div>
+    <div id="sidebar">
+    <div class="content">
+        <p>"Never increase, beyond what is necessary,
+            the number of entities required to explain anything."
+            William of Ockham (1285-1349)</p>
+    </div>
+    </div>
+    <div id="content">
+        <div class="details">
+            <h1>Free Web Building Tutorials</h1>
+            <p>At W3School.com.cn you will find all the Web-building
+                tutorials you need, from basic HTML and XHTML to advanced
+                XML, XSL, Multimedia and WAP.</p>
+            <br>
+            <p>W3School.com.cn - The Largest Web Developers Site On The Net!</p>
+        </div>
+    </div>
+    <div id="footer">
+    <p>Copyright 2008 by YingKe Investment.</p>
+    </div>
+</div>
+</body>
+</html>
